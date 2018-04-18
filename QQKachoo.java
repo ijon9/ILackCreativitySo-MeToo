@@ -11,6 +11,25 @@ public class QQKachoo<E> implements Deque<E>
 	_size = 0;
     }
 
+    public void addFirst()
+    {
+	
+    }
+
+    public String toString()
+    {
+	String ret = "";
+	DLLNode temp = _head;
+	
+	for (int x = 0; x < _size - 1; x++)
+	    {
+		ret += temp.toString();
+		temp = temp.getNext();
+	    }
+	return ret;
+    }
+
+    
     public static void main(String[] args)
     {}
 }
