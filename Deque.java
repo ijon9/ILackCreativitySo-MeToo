@@ -1,6 +1,6 @@
 public interface Deque<E>
 {
-    void addFirst();
+    //void addFirst();
     //void addLast();
 
     //E pollFirst();
