@@ -3,8 +3,7 @@
 
 # Plan:
 ### Underlying container: doubly-linked nodes
-### With doubly-linked nodes, all our runtimes for adding, removing, and 
-getting will be constant time.
+With doubly-linked nodes, all our runtimes for adding, removing, and getting will be constant time. We have already seen in class that singularly-linked nodes proved to be more efficient that ArrayLists when we were implementing the Queue interface. However, that only goes one way. With singularly-linked nodes we cannot move directly from the pointer at the last node to the node right before it. We must traverse through all the nodes from the first node to get to it. If we implemented singularly-linked nodes, this would be a problem for the runtime of removeLast(). We would get a linear runtime. A doubly-linked node allows us to have a direct access to the node before the last node, which means removeLast() would be constant runtime. Although the implementation for doubly-linked nodes will be slightly more complex than that of singularly-linked nodes, it will be worth the effort for the minimal runtime we will achieve after implmentation.  
 
 # To-Do List:
 ## 1. Implement core methods
