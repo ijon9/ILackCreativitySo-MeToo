@@ -1,25 +1,27 @@
 public class QQKachoo<E> implements Deque<E>
 {
-    private DLLNode _head;
-    private DLLNode _tail;
+    private DLLNode<E> _first;
+    private DLLNode<E> _last;
     private int _size;
 
     public QQKachoo()
     {
-	_head = null;
-	_tail = null;
+	_first = null;
+	_last = null;
 	_size = 0;
     }
 
-    public void addFirst()
+    public void addFirst(E val)
     {
-	
+	DLLNode<E> newVal = new DLLNode<E>(val, null _first);
+	_first.setPrev(newVal);
+	_first = newVal;
     }
 
     public String toString()
     {
 	String ret = "";
-	DLLNode temp = _head;
+	DLLNode<E> temp = _first;
 	
 	for (int x = 0; x < _size - 1; x++)
 	    {

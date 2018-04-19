@@ -1,7 +1,7 @@
 public interface Deque<E>
 {
-    void addFirst();
-    //void addLast();
+    void addFirst(E val);
+    //void addLast(E val);
 
     //E pollFirst();
     //E pollLast();
