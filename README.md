@@ -16,6 +16,8 @@ Since DLLNodes have two equally accessible ends, performing actions on the front
 
 ## 3. If time left, add other methods, which all perform similar actions to the methods already written.
 
+## 4. Implement the exceptions in the add method of Deque
+
 # Core Methods in Deque:
 ### addFirst()
 ### addLast()
