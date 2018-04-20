@@ -91,6 +91,11 @@ public class QQDriver
 
 	s("");
 
+	/*
+	s("Attempting to add null");
+	teamVoltron.addFirst(null);
+	*/
+	
 	s("Adding Paladin Lance in the front end");
 	teamVoltron.addFirst("Lance");
 	s("Adding Paladin Keith in the front end");

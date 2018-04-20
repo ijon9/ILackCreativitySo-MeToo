@@ -28,7 +28,10 @@ public class QQKachoo<E> implements Deque<E>
     public void addFirst(E val)
     {
 	DLLNode<E> newVal = new DLLNode<E>(val, null, null);
-
+	if(val == null)
+	    {
+		throw new NullPointerException();
+	    }
 	if (_size == 0)
 	    {
 		_first = newVal;
@@ -49,6 +52,10 @@ public class QQKachoo<E> implements Deque<E>
     {
 	DLLNode<E> newVal = new DLLNode<E>(val, null, null);
 
+	if(val == null)
+	    {
+		throw new NullPointerException();
+	    }
 	if (_size == 0)
 	    {
 		_first = newVal;
