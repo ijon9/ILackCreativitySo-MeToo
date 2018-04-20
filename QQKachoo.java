@@ -1,3 +1,5 @@
+import java.util.*;
+
 public class QQKachoo<E> implements Deque<E>
 {
     private DLLNode<E> _first;
@@ -10,7 +12,9 @@ public class QQKachoo<E> implements Deque<E>
 	_last = null;
 	_size = 0;
     }
-
+    ////////////////////////////////////////
+    //-----------v CORE METHODS v-----------
+    ////////////////////////////////////////
     public void addFirst(E val)
     {
 	DLLNode<E> newVal = new DLLNode<E>(val, null, null);
@@ -51,6 +55,29 @@ public class QQKachoo<E> implements Deque<E>
 	_size += 1;
     }
 
+    public E peekFirst()
+    {
+	if (_size == 0)
+	    return null;
+
+	return _first.getCargo();
+    }
+
+    public E peekLast()
+    {
+	if (_size == 0)
+	    return null;
+
+	return _last.getCargo();
+    }
+    ////////////////////////////////////////
+    //-----------^ CORE METHODS ^-----------
+    ////////////////////////////////////////
+
+    
+    ///////////////////////////////////////////////////////
+    //-----------v PHASE TWO EXCEPTION METHODS v-----------
+    ///////////////////////////////////////////////////////
     public E pollFirst()
     {
 	if (_size == 0)
@@ -66,7 +93,7 @@ public class QQKachoo<E> implements Deque<E>
 	_size -= 1;
 	return temp;
     }
-
+    
     public E pollLast()
     {
 	if (_size == 0)
@@ -83,22 +110,58 @@ public class QQKachoo<E> implements Deque<E>
 	return temp;
     }
 
-    public E peekFirst()
+    public E removeFirst()
     {
 	if (_size == 0)
-	    return null;
+	    throw new NoSuchElementException();
 
-	return _first.getCargo();
+	return pollFirst();
     }
+
+    public E removeLast()
+    {
+	if (_size == 0)
+	    throw new NoSuchElementException();
+
+	return pollLast();
+    }
+
+    public E getFirst()
+    {
+	if (_size == 0)
+	    throw new NoSuchElementException();
+
+	return peekFirst();
+    }
+        
+    public E getLast()
+    {
+	if (_size == 0)
+	    throw new NoSuchElementException();
+
+	return peekLast();
+    }
+    ///////////////////////////////////////////////////////
+    //-----------^ PHASE TWO EXCEPTION METHODS ^-----------
+    ///////////////////////////////////////////////////////
     
-    public E peekLast()
-    {
-	if (_size == 0)
-	    return null;
 
-	return _last.getCargo();
-    }
+    /////////////////////////////////////////////////
+    //-----------v ENCAPSULATING METHODS v-----------
+    /////////////////////////////////////////////////
+    public void add(E val) {addLast(val);}
+    public E remove() {return removeFirst();}
+    public E poll() {return pollFirst();}
+    public E element() {return getFirst();}
+    public E peek() {return peekFirst();}
 
+    public void push(E val) {addFirst(val);}
+    public E pop() {return removeFirst();}
+    /////////////////////////////////////////////////
+    //-----------v ENCAPSULATING METHODS v-----------
+    /////////////////////////////////////////////////
+
+    
     public String toString()
     {
 	String ret = "";

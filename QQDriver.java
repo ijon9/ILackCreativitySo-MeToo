@@ -8,11 +8,12 @@ public class QQDriver
     
     public static void main(String[] args)
     {
+	/*
 	//CORE IMPLEMENTATION
 	Deque<String> teamVoltron = new QQKachoo<String>();
 	s("Empty Deque teamVoltron created");
-	s("Peeking at the first end: "+teamVoltron.peekFirst());
-	s("Peeking at the last end: "+teamVoltron.peekLast());
+	s("Peeking into the front end: "+teamVoltron.peekFirst());
+	s("Peeking into the back end: "+teamVoltron.peekLast());
 
 	s("");
 
@@ -75,5 +76,74 @@ public class QQDriver
 	s("Removing a paladin from back: "+teamVoltron.pollLast());
 	s("Removing a paladin from back: "+teamVoltron.pollLast());
 	s("Removing a paladin from back, there should be none. "+teamVoltron.pollLast());
+	*/
+	
+	//PHASE TWO IMPLEMENTATION
+	Deque<String> teamVoltron = new QQKachoo<String>();
+	s("Empty Deque teamVoltron created");
+	//s("Getting paladin at the front end: "+teamVoltron.getFirst());
+	//s("Getting paladin at the back end: "+teamVoltron.getLast());
+
+	s("");
+
+	s("Adding Paladin Lance in the front end");
+	teamVoltron.addFirst("Lance");
+	s("Adding Paladin Keith in the front end");
+	teamVoltron.addFirst("Keith");
+	s("Adding Paladin Pidge in the front end");
+	teamVoltron.addFirst("Pidge");
+	s("Adding Paladin Hunk in the front end");
+	teamVoltron.addFirst("Hunk");
+	s("Adding Paladin Shiro in the front end");
+	teamVoltron.addFirst("Shiro");
+	s("Adding Paladin Allura in the front end");
+	teamVoltron.addFirst("Allura");
+
+	s("");
+	
+	s("Paladins in teamVoltron: "+teamVoltron);
+	s("Getting the paladin at the front end: "+teamVoltron.getFirst());
+	s("Getting the paladin at the back end: "+teamVoltron.getLast());
+
+	s("");
+	
+	s("Removing a paladin from front: "+teamVoltron.removeFirst());
+	s("Removing a paladin from front: "+teamVoltron.removeFirst());
+	s("Removing a paladin from front: "+teamVoltron.removeFirst());
+	s("Removing a paladin from front: "+teamVoltron.removeFirst());
+	s("Removing a paladin from front: "+teamVoltron.removeFirst());
+	s("Removing a paladin from front: "+teamVoltron.removeFirst());
+	//s("Removing a paladin from front, there should be none. "+teamVoltron.removeFirst());
+
+	s("");
+	
+	s("Adding Paladin Lance in the back end");
+	teamVoltron.addLast("Lance");
+	s("Adding Paladin Keith in the back end");
+	teamVoltron.addLast("Keith");
+	s("Adding Paladin Pidge in the back end");
+	teamVoltron.addLast("Pidge");
+	s("Adding Paladin Hunk in the back end");
+	teamVoltron.addLast("Hunk");
+	s("Adding Paladin Shiro in the back end");
+	teamVoltron.addLast("Shiro");
+	s("Adding Paladin Allura in the back end");
+	teamVoltron.addLast("Allura");
+
+	s("");
+	
+	s("Paladins in teamVoltron: "+teamVoltron);
+	s("Getting the paladin at the front end: "+teamVoltron.getFirst());
+	s("Getting the paladin at the back end: "+teamVoltron.getLast());
+
+	s("");
+	
+	s("Removing a paladin from back: "+teamVoltron.removeLast());
+	s("Removing a paladin from back: "+teamVoltron.removeLast());
+	s("Removing a paladin from back: "+teamVoltron.removeLast());
+	s("Removing a paladin from back: "+teamVoltron.removeLast());
+	s("Removing a paladin from back: "+teamVoltron.removeLast());
+	s("Removing a paladin from back: "+teamVoltron.removeLast());
+	//s("Removing a paladin from back, there should be none. "+teamVoltron.removeLast());
     }
 }
