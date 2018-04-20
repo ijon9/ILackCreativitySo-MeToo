@@ -10,7 +10,7 @@ With doubly-linked nodes, all our runtimes for adding, removing, and getting wil
 Since DLLNodes have two equally accessible ends, performing actions on the front and the end of the Deque should be similar.
 ### addFirst() and addLast() will be almost the same as the add method in LLQueue()
 ### pollFirst() and pollLast() will be almost the same as the remove() method in LLQueue()
-### peekFirst() and peekLast() will just return the private instance variables _first and _last, respectively
+### peekFirst() and peekLast() will just return the private instance variables _first and _last, respectively, 
 
 ## 2. Implement exception handling in the methods that are stated to handle exceptions.
 
