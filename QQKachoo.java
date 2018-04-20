@@ -182,7 +182,7 @@ public class QQKachoo<E> implements Deque<E>
     /////////////////////////////////////////////////
     //-----------v EXTRA METHODS v-----------
     /////////////////////////////////////////////////
-    public boolean removeFirstOccurance(E val)
+    public boolean removeFirstOccurence(E val)
     {
 	if (_size == 0)
 	    return false;
@@ -209,7 +209,7 @@ public class QQKachoo<E> implements Deque<E>
 	return true;
     }
 
-    public boolean removeLastOccurance(E val)
+    public boolean removeLastOccurence(E val)
     {
 	if (_size == 0)
 	    return false;

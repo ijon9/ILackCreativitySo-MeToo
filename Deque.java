@@ -38,8 +38,8 @@ public interface Deque<E>
     //-----------^ ENCAPSULATION METHODS ^-----------
 
     //-----------v EXTRA METHODS v-----------
-    boolean removeFirstOccurance(E val);
-    boolean removeLastOccurance(E val);
+    boolean removeFirstOccurence(E val);
+    boolean removeLastOccurence(E val);
     //-----------^ EXTRA METHODS ^-----------
     
     
