@@ -1,3 +1,8 @@
+//Team ILackCreativitySo-MeToo - T. Fabiha, Nadine Jackson, Isaac Jon
+//APCS2 pd2
+//L #02: All Hands on Deque!
+//2018-04-20
+
 public class QQDriver
 {
     

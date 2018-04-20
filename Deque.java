@@ -1,3 +1,8 @@
+//Team ILackCreativitySo-MeToo - T. Fabiha, Nadine Jackson, Isaac Jon
+//APCS2 pd2
+//L #02: All Hands on Deque!
+//2018-04-20
+
 public interface Deque<E>
 {
     //-----------v CORE METHODS v-----------
@@ -9,6 +14,8 @@ public interface Deque<E>
 
     E peekFirst();
     E peekLast();
+
+    int size();
     //-----------^ CORE METHODS ^-----------
 
     //-----------v PHASE TWO EXCEPTION METHODS v-----------

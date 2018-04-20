@@ -1,3 +1,8 @@
+//Team ILackCreativitySo-MeToo - T. Fabiha, Nadine Jackson, Isaac Jon
+//APCS2 pd2
+//L #02: All Hands on Deque!
+//2018-04-20
+
 import java.util.*;
 
 public class QQKachoo<E> implements Deque<E>
@@ -15,6 +20,11 @@ public class QQKachoo<E> implements Deque<E>
     ////////////////////////////////////////
     //-----------v CORE METHODS v-----------
     ////////////////////////////////////////
+    public int size()
+    {
+	return _size;
+    }
+    
     public void addFirst(E val)
     {
 	DLLNode<E> newVal = new DLLNode<E>(val, null, null);
