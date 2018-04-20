@@ -35,7 +35,12 @@ public interface Deque<E>
 
     void push(E val);
     E pop();
-    //-----------^ PHASE TWO EXCEPTION METHODS ^-----------
+    //-----------^ ENCAPSULATION METHODS ^-----------
+
+    //-----------v EXTRA METHODS v-----------
+    boolean removeFirstOccurance(E val);
+    boolean removeLastOccurance(E val);
+    //-----------^ EXTRA METHODS ^-----------
     
     
 }

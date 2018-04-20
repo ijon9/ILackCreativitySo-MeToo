@@ -91,12 +91,7 @@ public class QQDriver
 	//s("Getting paladin at the back end: "+teamVoltron.getLast());
 
 	s("");
-	*/
-	/*
-	s("Attempting to add null");
-	teamVoltron.addFirst(null);
-	*/
-	/*
+
 	s("Adding Paladin Lance in the front end");
 	teamVoltron.addFirst("Lance");
 	s("Adding Paladin Keith in the front end");
@@ -177,15 +172,15 @@ public class QQDriver
 	s("");
 		
 	/*
-	  s("Paladins in teamVoltron: "+teamVoltron);
-	  s("Removing first occurance on Paladin Lance: "+teamVoltron.removeFirstOccurance("Lance"));
-	  s("Paladins in teamVoltron: "+teamVoltron);
-	  s("Removing first occurance on Paladin Lance: "+teamVoltron.removeFirstOccurance("Lance"));
-	  s("Paladins in teamVoltron: "+teamVoltron);
-	  s("Removing first occurance on Paladin Lance: "+teamVoltron.removeFirstOccurance("Lance"));
-	  s("Paladins in teamVoltron: "+teamVoltron);
-	  s("Removing first occurance on Paladin Lance: "+teamVoltron.removeFirstOccurance("Lance"));
-	  s("Paladins in teamVoltron: "+teamVoltron);
+	s("Paladins in teamVoltron: "+teamVoltron);
+	s("Removing first occurance on Paladin Lance: "+teamVoltron.removeFirstOccurance("Lance"));
+	s("Paladins in teamVoltron: "+teamVoltron);
+	s("Removing first occurance on Paladin Lance: "+teamVoltron.removeFirstOccurance("Lance"));
+	s("Paladins in teamVoltron: "+teamVoltron);
+	s("Removing first occurance on Paladin Lance: "+teamVoltron.removeFirstOccurance("Lance"));
+	s("Paladins in teamVoltron: "+teamVoltron);
+	s("Removing first occurance on Paladin Lance: "+teamVoltron.removeFirstOccurance("Lance"));
+	s("Paladins in teamVoltron: "+teamVoltron);
 	*/
 	
 	s("Paladins in teamVoltron: "+teamVoltron);
@@ -206,5 +201,7 @@ public class QQDriver
 	s("Removing last occurance on Paladin Lance: "+teamVoltron.removeLastOccurance("Lance"));
 	s("Paladins in teamVoltron: "+teamVoltron);
 
+	
+	
     }
 }
