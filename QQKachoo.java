@@ -20,6 +20,11 @@ public class QQKachoo<E> implements Deque<E>
     ////////////////////////////////////////
     //-----------v CORE METHODS v-----------
     ////////////////////////////////////////
+
+	public boolean isEmpty(){
+		return size() == 0;
+	}
+
     public int size()
     {
 	return _size;

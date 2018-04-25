@@ -14,6 +14,8 @@ public interface Deque<E>
 
     E peekFirst();
     E peekLast();
+	
+	boolean isEmpty();
 
     int size();
     //-----------^ CORE METHODS ^-----------
