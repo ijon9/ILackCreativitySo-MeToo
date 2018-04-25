@@ -16,7 +16,9 @@ Since DLLNodes have two equally accessible ends, performing actions on the front
 
 ## 3. If time left, add other methods, which all perform similar actions to the methods already written.
 
-## 3a. Implement the exceptions in the add method of Deque, which are the ClassCastException and the NullPointerException 
+## 4. Implement the exceptions in the add method of Deque, which are the ClassCastException and the NullPointerException.
+
+## 5. Implement removeFirstOccurrence and removeLastOccurrence 
 
 # Core Methods in Deque:
 ### addFirst()
