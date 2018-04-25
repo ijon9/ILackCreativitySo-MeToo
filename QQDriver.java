@@ -13,7 +13,7 @@ public class QQDriver
     
     public static void main(String[] args)
     {
-	/*
+	/*	
 	//CORE IMPLEMENTATION
 	Deque<String> teamVoltron = new QQKachoo<String>();
 	s("Empty Deque teamVoltron created");
@@ -81,7 +81,7 @@ public class QQDriver
 	s("Removing a paladin from back: "+teamVoltron.pollLast());
 	s("Removing a paladin from back: "+teamVoltron.pollLast());
 	s("Removing a paladin from back, there should be none. "+teamVoltron.pollLast());
-	*/
+	
 
 	/*
 	//PHASE TWO IMPLEMENTATION
@@ -191,19 +191,19 @@ public class QQDriver
 	s("Paladins in teamVoltron: "+teamVoltron);
 	s("");
 	
-	s("Removing last occurance on Paladin Lance: "+teamVoltron.removeLastOccurance("Lance"));
+	s("Removing last occurance on Paladin Lance: "+teamVoltron.removeLastOccurence("Lance"));
 	s("Paladins in teamVoltron: "+teamVoltron);
 	s("");
 	
-	s("Removing last occurance on Paladin Lance: "+teamVoltron.removeLastOccurance("Lance"));	
+	s("Removing last occurance on Paladin Lance: "+teamVoltron.removeLastOccurence("Lance"));	
 	s("Paladins in teamVoltron: "+teamVoltron);
 	s("");
 
-	s("Removing last occurance on Paladin Lance: "+teamVoltron.removeLastOccurance("Lance"));
+	s("Removing last occurance on Paladin Lance: "+teamVoltron.removeLastOccurence("Lance"));
 	s("Paladins in teamVoltron: "+teamVoltron);
 	s("");
 	
-	s("Removing last occurance on Paladin Lance: "+teamVoltron.removeLastOccurance("Lance"));
+	s("Removing last occurance on Paladin Lance: "+teamVoltron.removeLastOccurence("Lance"));
 	s("Paladins in teamVoltron: "+teamVoltron);
 
     }
