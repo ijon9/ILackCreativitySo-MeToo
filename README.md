@@ -42,16 +42,22 @@ Since DLLNodes have two equally accessible ends, performing actions on the front
 ### E getLast()
 
 # Encapsulation Methods in Deque:
-### void add(E val);
-### E remove();
-### E poll();
-### E element();
-### E peek();
+### void add(E val)
+### E remove()
+### E poll()
+### E element()
+### E peek()
 
-### void push(E val);
-### E pop();
+### void push(E val)
+### E pop()
 
 # Phase Two Methods in Deque:
-### boolean removeFirstOccurrence(E val);
-### boolean removeLastOccurrence(E val);
+### boolean removeFirstOccurrence(E val)
+### boolean removeLastOccurrence(E val)
+
+# Changes to CODE After Receiving Suggestions:
+### Added comments to all of our methods in QQKachoo
+### Fixed spelling errors with "occurrence" in our entire repository
+### Added more things to our to-do list
+### Made the driver more organized
 
