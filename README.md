@@ -18,14 +18,40 @@ Since DLLNodes have two equally accessible ends, performing actions on the front
 
 ## 4. Implement the exceptions in the add method of Deque, which are the ClassCastException and the NullPointerException.
 
-## 5. Implement removeFirstOccurrence and removeLastOccurrence 
+## 5. Implement removeFirstOccurrence and removeLastOccurrence. 
 
 # Core Methods in Deque:
-### addFirst()
-### addLast()
-### pollFirst()
-### pollLast()
-### peekFirst()
-### peekLast()
-### size()
+### void addFirst(E val)
+### void addLast(E val)
+
+### E pollFirst()
+### E pollLast()
+
+### E peekFirst()
+### E peekLast()
+	
+### boolean isEmpty()
+
+### int size()
+
+# Phase One Methods in Deque:
+### removeFirst()
+### removeLast()
+
+### E getFirst()
+### E getLast()
+
+# Encapsulation Methods in Deque:
+### void add(E val);
+### E remove();
+### E poll();
+### E element();
+### E peek();
+
+### void push(E val);
+### E pop();
+
+# Phase Two Methods in Deque:
+### boolean removeFirstOccurrence(E val);
+### boolean removeLastOccurrence(E val);
 
