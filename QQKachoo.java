@@ -10,7 +10,7 @@ public class QQKachoo<E> implements Deque<E>
     private DLLNode<E> _first;
     private DLLNode<E> _last;
     private int _size;
-
+    
     public QQKachoo()
     {
 	_first = null;
@@ -24,7 +24,8 @@ public class QQKachoo<E> implements Deque<E>
     {
 	return _size;
     }
-    
+
+    //Adds val at the front of the Deque
     public void addFirst(E val)
     {
 	DLLNode<E> newVal = new DLLNode<E>(val, null, null);
@@ -48,6 +49,7 @@ public class QQKachoo<E> implements Deque<E>
 	_size += 1;
     }
 
+    //Adds val at the end of the Deque
     public void addLast(E val)
     {
 	DLLNode<E> newVal = new DLLNode<E>(val, null, null);
@@ -72,6 +74,8 @@ public class QQKachoo<E> implements Deque<E>
 	_size += 1;
     }
 
+    //Returns the element at the front of Deque if one exists
+    //If empty, return null
     public E peekFirst()
     {
 	if (_size == 0)
@@ -80,6 +84,8 @@ public class QQKachoo<E> implements Deque<E>
 	return _first.getCargo();
     }
 
+    //Returns the element at the back of Deque if one exists
+    //If empty, return null
     public E peekLast()
     {
 	if (_size == 0)
@@ -95,6 +101,10 @@ public class QQKachoo<E> implements Deque<E>
     ///////////////////////////////////////////////////////
     //-----------v PHASE TWO EXCEPTION METHODS v-----------
     ///////////////////////////////////////////////////////
+
+    //Removes the element at the front of Deque if one exists
+    //Returns the removed element
+    //If empty, return null
     public E pollFirst()
     {
 	if (_size == 0)
@@ -110,7 +120,10 @@ public class QQKachoo<E> implements Deque<E>
 	_size -= 1;
 	return temp;
     }
-    
+
+    //Removes the element at the end of Deque if one exists
+    //Returns the removed element
+    //If empty, return null
     public E pollLast()
     {
 	if (_size == 0)
@@ -127,6 +140,7 @@ public class QQKachoo<E> implements Deque<E>
 	return temp;
     }
 
+    //Same function as pollFirst(), but throws an exception if the Deque is empty
     public E removeFirst()
     {
 	if (_size == 0)
@@ -134,7 +148,8 @@ public class QQKachoo<E> implements Deque<E>
 
 	return pollFirst();
     }
-
+    
+    //Same function as pollLast(), but throws an exception if the Deque is empty
     public E removeLast()
     {
 	if (_size == 0)
@@ -143,6 +158,7 @@ public class QQKachoo<E> implements Deque<E>
 	return pollLast();
     }
 
+    //Same function as peekFirst(), but throws an exception if the Deque is empty
     public E getFirst()
     {
 	if (_size == 0)
@@ -150,7 +166,8 @@ public class QQKachoo<E> implements Deque<E>
 
 	return peekFirst();
     }
-        
+
+    //Same function as peekLast(), but throws an exception if the Deque is empty
     public E getLast()
     {
 	if (_size == 0)
@@ -166,14 +183,14 @@ public class QQKachoo<E> implements Deque<E>
     /////////////////////////////////////////////////
     //-----------v ENCAPSULATING METHODS v-----------
     /////////////////////////////////////////////////
-    public void add(E val) {addLast(val);}
-    public E remove() {return removeFirst();}
-    public E poll() {return pollFirst();}
-    public E element() {return getFirst();}
-    public E peek() {return peekFirst();}
+    public void add(E val) {addLast(val);} //Adds value to end of Deque
+    public E remove() {return removeFirst();} //Same function as removeFirst()
+    public E poll() {return pollFirst();} //Same function as pollFirst()
+    public E element() {return getFirst();} //Same function as getFirst()
+    public E peek() {return peekFirst();} //Same function as peekFirst()
 
-    public void push(E val) {addFirst(val);}
-    public E pop() {return removeFirst();}
+    public void push(E val) {addFirst(val);} //Same function as addFirst()
+    public E pop() {return removeFirst();} //Same function as removeFirst()
     /////////////////////////////////////////////////
     //-----------v ENCAPSULATING METHODS v-----------
     /////////////////////////////////////////////////
@@ -182,7 +199,10 @@ public class QQKachoo<E> implements Deque<E>
     /////////////////////////////////////////////////
     //-----------v EXTRA METHODS v-----------
     /////////////////////////////////////////////////
-    public boolean removeFirstOccurence(E val)
+    
+    //Removes the first occurrence of val, and return true
+    //Returns false if the Deque is empty
+    public boolean removeFirstOccurrence(E val)
     {
 	if (_size == 0)
 	    return false;
@@ -209,7 +229,9 @@ public class QQKachoo<E> implements Deque<E>
 	return true;
     }
 
-    public boolean removeLastOccurence(E val)
+    //Removes the last occurrence of val, and return true
+    //REturns false if the Deque is empty
+    public boolean removeLastOccurrence(E val)
     {
 	if (_size == 0)
 	    return false;
@@ -236,6 +258,8 @@ public class QQKachoo<E> implements Deque<E>
 	return true;
     }
 
+    //Helper method for remove Last and First Occurrence
+    //If the value is not head or a tail, then it removes it
     private E removeMid(DLLNode<E> n)
     {
 	n.getNext().setPrev(n.getPrev());

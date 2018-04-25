@@ -1,11 +1,6 @@
-//Team ILackCreativitySo-MeToo - T. Fabiha, Nadine Jackson, Isaac Jon
-//APCS2 pd2
-//L #02: All Hands on Deque!
-//2018-04-20
-
 public class QQDriver
 {
-    
+    //prints whatever you input
     public static void s(Object x)
     {
 	System.out.println(x);
@@ -13,6 +8,10 @@ public class QQDriver
     
     public static void main(String[] args)
     {
+	/////////////////////////////
+	// v CORE IMPLEMENTATION v //
+	/////////////////////////////
+
 	/*
 	//CORE IMPLEMENTATION
 	Deque<String> teamVoltron = new QQKachoo<String>();
@@ -39,7 +38,9 @@ public class QQDriver
 	
 	s("Paladins in teamVoltron: "+teamVoltron);
 	s("Peeking into front end: "+teamVoltron.peekFirst());
-	s("Peeking into back end: "+teamVoltron.peekLast());
+	s("Peeking into back end: "+teamVoltron.peekLaOnce your team receives a pull request (each teammate should get a notification email), wait until all team members can be present to accept it. This may be done during class tomorrow if necessary.
+
+st());
 
 	s("");
 	
@@ -83,7 +84,17 @@ public class QQDriver
 	s("Removing a paladin from back, there should be none. "+teamVoltron.pollLast());
 	*/
 
+	/////////////////////////////
+	// ^ CORE IMPLEMENTATION ^ //
+	/////////////////////////////
+	
+
+
+	//////////////////////////////////
+	// v PHASE TWO IMPLEMENTATION v //
+	////////////////////////////////// 
 	/*
+	
 	//PHASE TWO IMPLEMENTATION
 	Deque<String> teamVoltron = new QQKachoo<String>();
 	s("Empty Deque teamVoltron created");
@@ -91,12 +102,12 @@ public class QQDriver
 	//s("Getting paladin at the back end: "+teamVoltron.getLast());
 
 	s("");
-	*/
-	/*
-	s("Attempting to add null");
-	teamVoltron.addFirst(null);
-	*/
-	/*
+	
+	
+	//s("Attempting to add null");
+	//teamVoltron.addFirst(null);
+	
+	
 	s("Adding Paladin Lance in the front end");
 	teamVoltron.addFirst("Lance");
 	s("Adding Paladin Keith in the front end");
@@ -156,8 +167,17 @@ public class QQDriver
 	s("Removing a paladin from back: "+teamVoltron.removeLast());
 	s("Removing a paladin from back: "+teamVoltron.removeLast());
 	//s("Removing a paladin from back, there should be none. "+teamVoltron.removeLast());
+	
 	*/
+	//////////////////////////////////
+	// ^ PHASE TWO IMPLEMENTATION ^ //
+	//////////////////////////////////
 
+	////////////////////////////////////
+	// v PHASE THREE IMPLEMENTATION v //
+	////////////////////////////////////
+	
+	
 	Deque<String> teamVoltron = new QQKachoo<String>();
 	s("Empty Deque teamVoltron created");
 	
@@ -176,35 +196,39 @@ public class QQDriver
 
 	s("");
 		
-	/*
-	  s("Paladins in teamVoltron: "+teamVoltron);
-	  s("Removing first occurance on Paladin Lance: "+teamVoltron.removeFirstOccurance("Lance"));
-	  s("Paladins in teamVoltron: "+teamVoltron);
-	  s("Removing first occurance on Paladin Lance: "+teamVoltron.removeFirstOccurance("Lance"));
-	  s("Paladins in teamVoltron: "+teamVoltron);
-	  s("Removing first occurance on Paladin Lance: "+teamVoltron.removeFirstOccurance("Lance"));
-	  s("Paladins in teamVoltron: "+teamVoltron);
-	  s("Removing first occurance on Paladin Lance: "+teamVoltron.removeFirstOccurance("Lance"));
-	  s("Paladins in teamVoltron: "+teamVoltron);
-	*/
+	
+	//s("Paladins in teamVoltron: "+teamVoltron);
+	//s("Removing first occurrence on Paladin Lance: "+teamVoltron.removeFirstOccurrence("Lance"));
+	//s("Paladins in teamVoltron: "+teamVoltron);
+	//s("Removing first occurrence on Paladin Lance: "+teamVoltron.removeFirstOccurrence("Lance"));
+	//s("Paladins in teamVoltron: "+teamVoltron);
+	//s("Removing first occurrence on Paladin Lance: "+teamVoltron.removeFirstOccurrence("Lance"));
+	//s("Paladins in teamVoltron: "+teamVoltron);
+	//s("Removing first occurrence on Paladin Lance: "+teamVoltron.removeFirstOccurrence("Lance"));
+	//s("Paladins in teamVoltron: "+teamVoltron);
+       
 	
 	s("Paladins in teamVoltron: "+teamVoltron);
 	s("");
 	
-	s("Removing last occurance on Paladin Lance: "+teamVoltron.removeLastOccurance("Lance"));
+	s("Removing last occurrence on Paladin Lance: "+teamVoltron.removeLastOccurrence("Lance"));
 	s("Paladins in teamVoltron: "+teamVoltron);
 	s("");
 	
-	s("Removing last occurance on Paladin Lance: "+teamVoltron.removeLastOccurance("Lance"));	
+	s("Removing last occurrence on Paladin Lance: "+teamVoltron.removeLastOccurrence("Lance"));	
 	s("Paladins in teamVoltron: "+teamVoltron);
 	s("");
 
-	s("Removing last occurance on Paladin Lance: "+teamVoltron.removeLastOccurance("Lance"));
+	s("Removing last occurrence on Paladin Lance: "+teamVoltron.removeLastOccurrence("Lance"));
 	s("Paladins in teamVoltron: "+teamVoltron);
 	s("");
 	
-	s("Removing last occurance on Paladin Lance: "+teamVoltron.removeLastOccurance("Lance"));
+	s("Removing last occurrence on Paladin Lance: "+teamVoltron.removeLastOccurrence("Lance"));
 	s("Paladins in teamVoltron: "+teamVoltron);
+	
 
+	////////////////////////////////////
+	// ^ Phase Three Implementation ^ //
+	////////////////////////////////////
     }
 }
